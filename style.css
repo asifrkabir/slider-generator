@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+}
+
+#sliders {
+  height: 400px;
+  width: 60%;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+}
+
+.gallery-header {
+  display: none;
+}
+
+.slider-item {
+  display: none;
+}
+
+.img-thumbnail {
+  cursor: pointer;
+}
+
+.added {
+  background-color: rgba(49, 87, 192, 0.801) !important;
+  border: none;
+}
+
+img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.prev-next {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  cursor: pointer;
+}
+
+.prev, .next {
+  background-color: transparent;
+  padding: 8px 10px;
+  color: #fff;
+}
+
+.dot {
+  background-color: rgb(163, 156, 156);
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 3px;
+}
+
+.main {
+  display: none;
+}
+
+.row img {
+  background-color: rgba(255, 0, 0, 0);
+  border: none;
+  border-radius: 10px;
+}
+
+@media (max-width: 767px) {
+  .justify-content-around.align-items-center.mt-3.gallery-header.mb-2 {
+    flex-direction: column;
+  }
+
+  #sliders {
+    height: 300px;
+    width: 90%;
+  }
+}
